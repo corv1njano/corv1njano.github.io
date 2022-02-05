@@ -1,3 +1,18 @@
+function copyText() {
+    let input = document.getElementById("textInput");
+    navigator.clipboard.writeText(input.value);
+    alert("Copied Text!");
+}
+
+function toggleDiv() {
+    let div = document.getElementById("help1");
+    if (div.style.display == 'block') {
+        div.style.display = 'none';
+    } else {
+        div.style.display = 'block';
+    }
+}
+
 function decodeText() {
     let input = document.getElementById("textInput").value;
     let r1 = input.replaceAll('\\u0061', 'a')
