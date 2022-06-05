@@ -1,52 +1,5 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="utf-8">
-    <script src="main.js"></script>
-    <title>Decoder for Unicode Text</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="icon" href="img/grass.png" type="image/icon type">
+    <meta http-equiv="Refresh" content="0; url='en/index'"/>
 </head>
-<body>
-    <div class="head">
-        <h1>Decode encrypted unicode Text</h1>
-        <h4>Decode text that is encrypted in Minecraft resource and behavior packs.</h4>
-    </div>
-    <div class="textarea">
-        <textarea id="textInput" placeholder="Paste encrypted text here..." spellcheck="false"></textarea>
-    </div>
-    <div class="bottom">
-        <button onClick="decodeText()">Decode Text</button>
-        <button onClick="copyText()">Copy Text</button>
-    </div>
-    <div class="tuto">
-        <h2>How does it work?</h2>
-        <h4>1) Copy the unicode text from the text file, the unicode text should look like <mark onClick="toggleDiv()">this</mark>
-        <br>
-        2) Paste the text inside the text area above and click on "Decode Text"
-        <br>
-        3) Click on "Copy Text" and replace the text in your text file with the new one
-        </h4>
-    </div>
-
-    <div style="display:none;" id="help1">
-        <h5 style="font-size:18px;">Code Example of unicode encrypted text:</h5>
-        <div class="code">
-            <p>
-                {<br>
-                &nbsp;&nbsp;"\u0066\u006F\u0072\u006D\u0061\u0074\u005F\u0076\u0065\u0072\u0073\u0069\u006F\u006E": "\u0031\u002E\u0031",<br>
-                &nbsp;&nbsp;"\u0061\u006E\u0069\u006D\u0061\u0074\u0069\u006F\u006E\u002E\u0074\u0065\u0073\u0074": {<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;"\u0063\u006F\u006E\u0074\u0072\u006F\u006C\u006C\u0065\u0072\u002E\u0074\u0065\u0073\u0074", <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;"\u0064\u0065\u0066\u0061\u0075\u006C\u0074": {<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"\u0074\u0065\u0073\u0074\u005F\u0074\u0065\u0073\u0074"<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                &nbsp;&nbsp;}<br>
-                }
-            </p>
-        </div>
-        <h5 style="font-size:18px;">If the text file looks like this or the text gets displayed as "\u0066" for example, then you can easily decode this text on that webpage.</h5>
-        <div class="button">
-            <button onClick="toggleDiv()">Close Window</button>
-        </div>
-    </div>
-</body>
 </html>
