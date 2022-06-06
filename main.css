@@ -15,6 +15,9 @@ body {
     overflow:hidden;
     background:#27244d;
 }
+.header1-img {
+    margin:17px 20px;
+}
 .header-2 {
     height:100px;
     background:#33386b;
