@@ -6,9 +6,18 @@ body {
     font-family:sans-serif;
     color:rgb(209, 209, 209);
     background-color:rgb(58, 58, 58);
+    background: radial-gradient(circle, rgba(77,79,108,1) 0%, rgba(46,46,46,1) 100%);
 }
 .body-content {
-    margin:50px 20px 30px 20px;
+    margin-top: 10px;
+    height:400px;
+    background:#20202094;
+    padding:20px;
+    border-radius:40px;
+}
+.wrap {
+    width:70%;
+    margin: 0 auto;
 }
 
 .header {
@@ -29,6 +38,40 @@ body {
     margin-top:15px;
 }
 
+nav {
+    margin-top: 50px;
+    width:100%;
+    height:80px;
+    background-color:#20202094;
+    border-radius:40px;
+}
+ul li {
+    list-style:none;
+    display: inline-block;
+    line-height:80px;
+}
+ul {
+    margin-left:40px;
+}
+ul li a {
+    text-decoration:none;
+    cursor:pointer;
+    color:rgb(209, 209, 209);
+    font-size:30px;
+    padding:0 30px;
+    transition:0.2s;
+}
+ul li a:hover {
+    color:#4951a8;
+    text-shadow:1px 1px 5px black;
+}
+.nav-img {
+    display:none;
+}
+.nav-img-padding p {
+    display:none;
+}
+
 @media only screen and (max-width:768px) {
     .sub-header {
         height:70px;
@@ -43,5 +86,64 @@ body {
     }
     .title-header:hover {
         margin-top:7px;
+    }
+
+    .body-content {
+        height:400px;
+        background:#20202094;
+        margin-top:15px;
+        padding:10px;
+        border-radius:15px;
+    }
+    .wrap {
+        width:90%;
+        margin: 0 auto;
+    }
+
+    nav {
+        margin-top: 30px;
+        width:100%;
+        height:60px;
+        background-color:#20202094;
+        border-radius:30px;
+    }
+    ul li a {
+        display:none;
+    }
+    #nav-img {
+        display:block;
+        background-image: url("img/menu.png");
+        background-repeat:no-repeat;
+        background-size:40px;
+        height:40px;
+        width:40px;
+        margin:9px 0 0 30px;
+        transition:0.2s;
+    }
+    .nav-img-padding {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .nav-img-padding p {
+        display:block;
+        font-size:30px;
+        float:left;
+        padding-top:10px;
+        padding-left:10px;
+        transition:0.2s;
+    }
+    .nav-img-padding:hover #nav-img {
+        background-image: url("img/menu-hover.png");
+        background-repeat:no-repeat;
+        background-size:40px;
+        height:40px;
+        width:40px;
+        margin:9px 0 0 30px;
+        cursor: pointer
+    }
+    .nav-img-padding:hover p {
+        color:#4951a8;
+        text-shadow:1px 1px 5px black;
+        cursor: pointer;
     }
 }
