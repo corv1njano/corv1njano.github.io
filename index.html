@@ -1,6 +1,145 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Refresh" content="0; url='en/index'"/>
-    <link rel="icon" href="img/logo.png" type="image/icon type">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Brain</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        html, body {
+            height:100%;
+            font-family:Verdana;
+        }
+        body {
+            background-color:#303030;
+        }
+        .content {
+            margin:0 auto;
+            padding:50px 0;
+            text-align:center;
+        }
+        h1 {
+            font-size:40px;
+            color:rgb(231, 231, 231);
+        }
+        .math {
+            padding:90px 0;
+        }
+        table {
+            text-align:center;
+            margin:0 auto;
+            color:rgb(231, 231, 231);
+        }
+        table tr td p {
+            font-size:70px;
+        }
+        input {
+            border:0px solid red;
+            background-color:#303030;
+            border-bottom:3px solid rgb(231, 231, 231);
+            color:rgb(7, 137, 223);
+            padding:5px;
+            font-size:70px;
+            width:200px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+        input:focus {
+            outline:none;
+        }
+        input:hover {
+            border-bottom:3px solid rgb(7, 137, 223);
+        }
+        b {
+            color:rgb(7, 137, 223);
+        }
+        button {
+            padding:10px;
+            margin-top:90px;
+            color:rgb(231, 231, 231);
+            background-color:rgb(7, 137, 223);
+            border:0px solid red;
+            border-radius:30px;
+            width:300px;
+            font-size:30px;
+            font-weight:bolder;
+            transition:0.3s;
+            cursor:pointer;
+        }
+        button:hover {
+            background-color:#079cff;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            var num1 = document.getElementById("math1");
+            var num2 = document.getElementById("math2");
+            var sym = document.getElementById("operator");
+
+            num1.innerHTML = Math.floor(Math.random()*(101-1)+1);
+            num2.innerHTML = Math.floor(Math.random()*(101-1)+1);
+        }
+
+        function checkSolution() {
+            var num1 = document.getElementById("math1").innerHTML*1;
+            var num2 = document.getElementById("math2").innerHTML*1;
+            var user = document.getElementById("solution");
+            var score = document.getElementById("points");
+            var btn = document.getElementById("button");
+
+            if (num1 + num2 == user.value) {
+                score.innerHTML = score.innerHTML*1+10;
+                user.value = "";
+                generateTask();
+                btn.style.backgroundColor = "#079cff";
+                score.style.color = "#079cff";
+            } else {
+                score.innerHTML = "0";
+                user.value = "";
+                btn.style.backgroundColor = "#db3131";
+                score.style.color = "#db3131";
+            }
+        }
+
+        function generateTask() {
+            var num1 = document.getElementById("math1");
+            var num2 = document.getElementById("math2");
+            var sym = document.getElementById("operator");
+
+            num1.innerHTML = Math.floor(Math.random()*(101-1)+1);
+            num2.innerHTML = Math.floor(Math.random()*(101-1)+1);
+        }
+    </script>
 </head>
+<body>
+    <div class="content">
+        <h1>Points: <b id="points">0</b></h1>
+        <div class="math">
+            <table>
+                <tr>
+                    <td>
+                        <p id="math1"></p>
+                    </td>
+                    <td>
+                        <p id="operator">+</p>
+                    </td>
+                    <td>
+                        <p id="math2"></p>
+                    </td>
+                    <td>
+                        <p>=</p>
+                    </td>
+                    <td>
+                        <input id="solution" type="text">
+                    </td>
+                </tr>
+            </table>
+            <button id="button" onclick="checkSolution()">NEXT TASK</button>
+        </div>
+    </div>
+</body>
 </html>
