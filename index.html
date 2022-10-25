@@ -133,21 +133,14 @@
         }
     </style>
     <script>
-        window.onload = function(){
-            var num1 = document.getElementById("math1");
-            var num2 = document.getElementById("math2");
-            var sym = document.getElementById("operator");
-
-            num1.innerHTML = Math.floor(Math.random()*(101-1)+1);
-            num2.innerHTML = Math.floor(Math.random()*(101-1)+1);
-        }
+        window.onload = generateTask(); //when page entered
 
         function checkSolution() {
             var num1 = document.getElementById("math1").innerHTML*1;
             var num2 = document.getElementById("math2").innerHTML*1;
             var user = document.getElementById("solution");
             var score = document.getElementById("points");
-            var btn = document.getElementById("button");
+            var btn = document.getElementById("button"); //just style
             var high = document.getElementById("highest");
 
             if (num1 + num2 == user.value) {
@@ -157,13 +150,14 @@
                 btn.style.backgroundColor = "#079cff";
                 score.style.color = "#079cff";
             } else {
+                //highscore check
                 var checkHigh = document.getElementById("highest").innerHTML*1;
                 if (checkHigh >= score.innerHTML*1) {
                     high.innerHTML = high.innerHTML;
                 } else {
                     high.innerHTML = score.innerHTML*1;
                 }
-                setTimeout(function(){
+                setTimeout(function(){ //delay for fetching highscore
                     score.innerHTML = "0";
                     user.value = "";
                     btn.style.backgroundColor = "#db3131";
