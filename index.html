@@ -13,6 +13,7 @@
         html, body {
             height:100%;
             font-family:Verdana;
+            color:rgb(231, 231, 231);
         }
         body {
             background-color:#303030;
@@ -73,6 +74,63 @@
         button:hover {
             background-color:#079cff;
         }
+        a {
+            text-decoration:underline;
+            color:rgb(7, 137, 223);
+        }
+        h3 {
+            color:rgb(161, 161, 161);
+            padding-top:300px;
+        }
+        @media only screen and (max-width:768px) {
+            .content {
+                margin:0 auto;
+                padding:10px 0;
+                text-align:center;
+            }
+            h1 {
+                font-size:30px;
+                color:rgb(231, 231, 231);
+            }
+            .math {
+                padding:30px 0;
+            }
+            table tr td p {
+                font-size:30px;
+            }
+            input {
+                border:0px solid red;
+                background-color:#303030;
+                border-bottom:3px solid rgb(231, 231, 231);
+                color:rgb(7, 137, 223);
+                padding:5px;
+                font-size:30px;
+                width:100px;
+                cursor:pointer;
+                transition:0.3s;
+            }
+            button {
+                padding:5px;
+                margin-top:60px;
+                color:rgb(231, 231, 231);
+                background-color:rgb(7, 137, 223);
+                border:0px solid red;
+                border-radius:30px;
+                width:220px;
+                font-size:22px;
+                font-weight:bolder;
+                transition:0.3s;
+                cursor:pointer;
+            }
+            h2 {
+                font-size:20px;
+            }
+            h3 {
+                font-size:14px;
+                color:rgb(161, 161, 161);
+                padding-top:100px;
+            }
+        }
     </style>
     <script>
         window.onload = function(){
@@ -90,6 +148,7 @@
             var user = document.getElementById("solution");
             var score = document.getElementById("points");
             var btn = document.getElementById("button");
+            var high = document.getElementById("highest");
 
             if (num1 + num2 == user.value) {
                 score.innerHTML = score.innerHTML*1+10;
@@ -98,10 +157,18 @@
                 btn.style.backgroundColor = "#079cff";
                 score.style.color = "#079cff";
             } else {
-                score.innerHTML = "0";
-                user.value = "";
-                btn.style.backgroundColor = "#db3131";
-                score.style.color = "#db3131";
+                var checkHigh = document.getElementById("highest").innerHTML*1;
+                if (checkHigh >= score.innerHTML*1) {
+                    high.innerHTML = high.innerHTML;
+                } else {
+                    high.innerHTML = score.innerHTML*1;
+                }
+                setTimeout(function(){
+                    score.innerHTML = "0";
+                    user.value = "";
+                    btn.style.backgroundColor = "#db3131";
+                    score.style.color = "#db3131";
+                },100);
             }
         }
 
@@ -118,6 +185,7 @@
 <body>
     <div class="content">
         <h1>Points: <b id="points">0</b></h1>
+        <h2>Current Highscore: <b id="highest">0</b></h2>
         <div class="math">
             <table>
                 <tr>
@@ -140,6 +208,7 @@
             </table>
             <button id="button" onclick="checkSolution()">NEXT TASK</button>
         </div>
+        <h3>Website by <a href="https://twitter.com/corv1njano">@corv1njano</a>!</h3>
     </div>
 </body>
 </html>
