@@ -133,7 +133,9 @@
         }
     </style>
     <script>
-        window.onload = generateTask(); //when page entered
+        window.onload = function(){
+            generateTask();
+        }
 
         function checkSolution() {
             var num1 = document.getElementById("math1").innerHTML*1;
