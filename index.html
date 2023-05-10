@@ -80,7 +80,10 @@
         }
         h3 {
             color:rgb(161, 161, 161);
-            padding-top:300px;
+        }
+        footer {
+            position:sticky;
+            
         }
         @media only screen and (max-width:768px) {
             .content {
@@ -138,28 +141,26 @@
         }
 
         function checkSolution() {
-            var num1 = document.getElementById("math1").innerHTML*1;
-            var num2 = document.getElementById("math2").innerHTML*1;
-            var user = document.getElementById("solution");
-            var score = document.getElementById("points");
-            var btn = document.getElementById("button"); //just style
-            var high = document.getElementById("highest");
-
-            if (num1 + num2 == user.value) {
+            let num1 = document.getElementById("math1").innerHTML*1;
+            let num2 = document.getElementById("math2").innerHTML*1;
+            let user = document.getElementById("solution");
+            let score = document.getElementById("points");
+            let btn = document.getElementById("button");
+            let high = document.getElementById("highest");
+            if (num1 + num2 == user.value*1) {
                 score.innerHTML = score.innerHTML*1+10;
                 user.value = "";
                 generateTask();
                 btn.style.backgroundColor = "#079cff";
                 score.style.color = "#079cff";
             } else {
-                //highscore check
-                var checkHigh = document.getElementById("highest").innerHTML*1;
+                let checkHigh = document.getElementById("highest").innerHTML*1;
                 if (checkHigh >= score.innerHTML*1) {
                     high.innerHTML = high.innerHTML;
                 } else {
                     high.innerHTML = score.innerHTML*1;
                 }
-                setTimeout(function(){ //delay for fetching highscore
+                setTimeout(function(){
                     score.innerHTML = "0";
                     user.value = "";
                     btn.style.backgroundColor = "#db3131";
@@ -169,12 +170,15 @@
         }
 
         function generateTask() {
-            var num1 = document.getElementById("math1");
-            var num2 = document.getElementById("math2");
-            var sym = document.getElementById("operator");
-
+            let num1 = document.getElementById("math1");
+            let num2 = document.getElementById("math2");
             num1.innerHTML = Math.floor(Math.random()*(101-1)+1);
             num2.innerHTML = Math.floor(Math.random()*(101-1)+1);
+            if (sym1.innerHTML == "0") {
+                sym1.innerHTML = "+";
+            } else {
+                sym1.innerHTML = "-";
+            }
         }
     </script>
 </head>
@@ -204,7 +208,9 @@
             </table>
             <button id="button" onclick="checkSolution()">NEXT TASK</button>
         </div>
-        <h3>Website by <a href="https://twitter.com/corv1njano">@corv1njano</a>!</h3>
+        <footer>
+            <h3>Website by <a href="https://twitter.com/corv1njano">@corv1njano</a>!</h3>
+        </footer>
     </div>
 </body>
 </html>
