@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url('assets/bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #f2f2f2;
+    scroll-behavior: smooth;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 60%;
+    background-color: #24242488;
+    box-shadow: 10px 0 5px #24242488, -10px -0 5px #24242488;
+}
+
+.language {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.language p {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0 10px 10px;
+    display: flex;
+    padding-right: 10px;
+    transition: 0.2s;
+}
+
+.dash {
+    font-weight: 900;
+}
+
+.current-lang {
+    font-weight: 900;
+    text-decoration: underline;
+    color: rgb(192, 10, 138)
+}
+
+.language a:hover p {
+    text-decoration: underline;
+    color: rgb(192, 10, 138);
+    cursor: pointer;
+}
+
+.offers-grid {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.offers-item {
+    padding: 10px;
+    border: 0px solid #fff;
+    background-color: rgba(102, 0, 71, 0.568);
+}
+
+.offers-item .offer-title {
+    color: #f2f2f2;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.offers-item p {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.padding-left {
+    padding-left: 20px;
+}
+
+.offers-item {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgba(102, 0, 71, 0.568);
+}
+
+.price {
+    justify-content: center;
+    display: flex;
+}
+
+.offer-price {
+    padding: 10px 0px 20px 0px;
+}
+
+.price-old {
+    background-color: #ffffff00;
+    font-weight: 900;
+    color: rgb(207, 42, 42)
+}
+
+.price-new {
+    color: rgb(231, 245, 42);
+}
+
+.buy-grid {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.buy-item {
+    margin-top: 1.4rem;
+}
+
+.buy-button {
+    display: flex;
+    justify-content: center;
+}
+
+.buy-button button {
+    color: #f2f2f2;
+    padding: 10px 45px 10px 45px;
+    border-radius: 25px;
+    border: rgba(192, 10, 137, 0.493);
+    background-color: rgba(192, 10, 137, 0.493);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+.buy-button:hover button {
+    border: rgba(255, 60, 197, 0.493);
+    background-color: rgba(255, 60, 197, 0.493);
+    cursor: pointer;
+}
+
+.alert {
+    padding: 10px;
+    margin: 5px 0px 20px 0px;
+    background-color: #2424246e;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#time {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-flex;
+}
+
+.info {
+    padding: 10px;
+    margin: 5px 0px 15px 0px;
+    background-color: #2424246e;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.outfit-grid {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.outfit-item {
+    flex: 20%;
+    max-width: 20%;
+    padding: 10px;
+}
+
+.outfit-item img {
+    width: 100%;
+    vertical-align: middle
+}
+
+h1 {
+    color: #f2f2f2;
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: 'Sedgwick Ave Display', cursive;
+    padding: 30px 0 10px 10px;
+}
+
+h2 {
+    color: #f2f2f2;
+    font-size: 2rem;
+    text-align: left;
+    font-family: 'Sedgwick Ave Display', cursive;
+    padding: 30px 0 10px 10px;
+}
+
+h3 {
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0 10px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.normal-button {
+    color: #f2f2f2;
+    padding: 10px 45px 10px 45px;
+    border-radius: 25px;
+    border: rgba(192, 10, 137, 0.493);
+    background-color: rgba(192, 10, 137, 0.493);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    transition: 0.3s;
+    margin: 15px;
+}
+
+a:hover .normal-button {
+    border: rgba(255, 60, 197, 0.493);
+    background-color: rgba(255, 60, 197, 0.493);
+    cursor: pointer;
+}
