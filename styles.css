@@ -13,7 +13,6 @@ body {
     background-attachment: fixed;
     color: #f2f2f2;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -58,6 +57,7 @@ body {
 
 .dash {
     font-weight: 900;
+    display: block;
 }
 
 .current-lang {
@@ -66,7 +66,16 @@ body {
     color: rgb(192, 10, 138)
 }
 
-.language a:hover p {
+.language a {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0 10px 10px;
+    display: flex;
+    padding-right: 10px;
+    transition: 0.2s;
+}
+
+.language a:hover {
     text-decoration: underline;
     color: rgb(192, 10, 138);
     cursor: pointer;
@@ -241,6 +250,7 @@ h1 {
     text-align: center;
     font-family: 'Sedgwick Ave Display', cursive;
     padding: 30px 0 10px 10px;
+    text-shadow: 2px 2px 20px #C00A89, 2px 2px 20px rgba(223,12,159,0.69), 2px 2px 20px rgba(251,14,179,0.69), 2px 2px 20px rgba(251,14,179,0.69);
 }
 
 h2 {
@@ -251,9 +261,10 @@ h2 {
     padding: 20px 0 10px 10px;
 }
 
-h3 {
+.lang-title {
     color: #f2f2f2;
     font-size: 1.2rem;
+    font-weight: 900;
     font-family: 'Montserrat', sans-serif;
     padding: 10px 0 10px 10px;
 }
@@ -268,7 +279,7 @@ a {
     padding: 10px 45px 10px 45px;
     border-radius: 25px;
     border: rgba(192, 10, 137, 0.493);
-    background-color: rgba(192, 10, 137, 0.493);
+    background-color: #c00a897e;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 900;
@@ -333,29 +344,41 @@ a:hover .normal-button {
         font-size: 2rem;
         text-align: center;
         font-family: 'Sedgwick Ave Display', cursive;
-        padding: 20px 0 8px 20px;
+        padding: 20px 0 8px 0;
+        text-shadow: 2px 2px 20px #C00A89, 2px 2px 20px rgba(223,12,159,0.69), 2px 2px 20px rgba(251,14,179,0.69), 2px 2px 20px rgba(251,14,179,0.69);
     }
 
     .language {
-        margin-top: 12px;
-        display: flex;
-        justify-content: center;
+        display: block;
     }
-    
+
     .language p {
         font-size: 0.9rem;
         font-family: 'Montserrat', sans-serif;
-        padding: 5px 0px 5px 5px;
-        display: flex;
-        padding-right: 5px;
         transition: 0.2s;
     }
 
-    h3 {
-        color: #f2f2f2;
+    .language a {
         font-size: 0.9rem;
         font-family: 'Montserrat', sans-serif;
-        padding: 5px 0px 5px 5px;
+        transition: 0.2s;
+        display: flex;
+        justify-content: center;
+        padding: 2px;
+    }
+
+    .language .dash {
+        display: none;
+    }
+
+    .lang-title {
+        color: #f2f2f2;
+        font-size: 0.9rem;
+        font-weight: 900;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        display: flex;
+        justify-content: center;
     }
 
     h2 {
@@ -374,12 +397,12 @@ a:hover .normal-button {
         font-family: 'Montserrat', sans-serif;
         text-align: center;
     }
-    
+
     #time {
         padding-left: 5px;
         padding-right: 5px;
     }
-    
+
     .info {
         padding: 5px;
         margin: 5px 5px 12px 5px;
@@ -395,12 +418,12 @@ a:hover .normal-button {
         grid-template-columns: 1fr;
         padding: 25px;
     }
-    
+
     .offers-item {
         padding: 5px;
         background-color: rgba(102, 0, 71, 0.568);
     }
-    
+
     .offers-item .offer-title {
         color: #f2f2f2;
         font-size: 1.4rem;
@@ -408,16 +431,16 @@ a:hover .normal-button {
         text-align: center;
         font-family: 'Montserrat', sans-serif;
     }
-    
+
     .offers-item p {
         font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
     }
-    
+
     .padding-left {
         padding-left: 15px;
     }
-    
+
     .offers-item {
         padding: 7px;
         border-radius: 25px;
@@ -433,12 +456,12 @@ a:hover .normal-button {
         margin-top: 0.5rem;
         margin-bottom: 0.3rem;
     }
-    
+
     .buy-button {
         display: flex;
         justify-content: center;
     }
-    
+
     .buy-button button {
         color: #f2f2f2;
         padding: 10px 30px 10px 30px;
@@ -455,31 +478,31 @@ a:hover .normal-button {
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     .outfit-item {
         flex: 33.33%;
         max-width: 33.33%;
         padding: 8px;
     }
-    
+
     .outfit-item img {
         width: 100%;
         vertical-align: middle;
         cursor: zoom-in;
         border-radius: 15px;
     }
-    
+
     .vehicle-grid {
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     .vehicle-item {
         flex: 100%;
         max-width: 100%;
         padding: 8px;
     }
-    
+
     .vehicle-item img {
         width: 100%;
         vertical-align: middle;
@@ -489,5 +512,11 @@ a:hover .normal-button {
 
     .shown {
         display: none;
+    }
+    
+    .footer {
+        padding: 20px 0px 0px 0px;
+        text-align: center;
+        letter-spacing: 0.15rem;
     }
 }
