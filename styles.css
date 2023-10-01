@@ -13,6 +13,7 @@ body {
     background-attachment: fixed;
     color: #f2f2f2;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -316,12 +317,7 @@ a:hover .normal-button {
     padding: 10px;
 }
 
-
-
-
-
-
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 500px) {
     ::-webkit-scrollbar {
         width: 9px;
     }
