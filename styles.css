@@ -15,6 +15,19 @@ body {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(102, 0, 71);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(226, 33, 168);
+    border-radius: 50px;
+}
+
 .center {
     display: flex;
     justify-content: center;
@@ -24,12 +37,11 @@ body {
     margin: 0 auto;
     width: 60%;
     background-color: #24242488;
-    box-shadow: 10px 0 5px #24242488, -10px -0 5px #24242488;
     display: block;
 }
 
 .language {
-    margin-top: 30px;
+    margin-top: 15px;
     display: flex;
     justify-content: center;
 }
@@ -63,11 +75,11 @@ body {
     display: grid;
     column-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 8px;
 }
 
 .offers-item {
     padding: 10px;
-    border: 0px solid #fff;
     background-color: rgba(102, 0, 71, 0.568);
 }
 
@@ -111,6 +123,7 @@ body {
 
 .price-new {
     color: rgb(231, 245, 42);
+    padding-left: 5px;
 }
 
 .buy-grid {
@@ -146,25 +159,27 @@ body {
     cursor: pointer;
 }
 
+.buy-item-phone {
+    display: none;
+}
+
 .alert {
     padding: 10px;
-    margin: 5px 0px 20px 0px;
+    margin: 10px 8px 20px 8px;
     background-color: #2424246e;
     border-radius: 25px;
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 #time {
     padding-left: 5px;
     padding-right: 5px;
-    display: inline-flex;
 }
 
 .info {
     padding: 10px;
-    margin: 5px 0px 15px 0px;
+    margin: 5px 8px 15px 8px;
     background-color: #2424246e;
     border-radius: 25px;
     font-family: 'Montserrat', sans-serif;
@@ -174,7 +189,6 @@ body {
 .outfit-grid {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .outfit-item {
@@ -190,6 +204,36 @@ body {
     border-radius: 15px;
 }
 
+.vehicle-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vehicle-item {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 10px;
+}
+
+.vehicle-item img {
+    width: 100%;
+    vertical-align: middle;
+    cursor: zoom-in;
+    border-radius: 15px;
+}
+
+.faq {
+    margin-top: 100px;
+    width: 100%;
+    background-color: rgba(102, 0, 71, 0.568);
+}
+
+.footer {
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+    letter-spacing: 0.15rem;
+}
+
 h1 {
     color: #f2f2f2;
     font-size: 3.5rem;
@@ -203,7 +247,7 @@ h2 {
     font-size: 2rem;
     text-align: left;
     font-family: 'Sedgwick Ave Display', cursive;
-    padding: 30px 0 10px 10px;
+    padding: 20px 0 10px 10px;
 }
 
 h3 {
@@ -237,14 +281,32 @@ a:hover .normal-button {
     cursor: pointer;
 }
 
-#image-view {
-    padding: 30px;
+#image-view-outfit {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 380px;
     height: auto;
+    box-shadow: 0 0 25px rgba(192, 10, 137, 0.493);
+    border-radius: 15px;
 }
+
+#outfitDemo {
+    display: none;
+}
+
+#outfitDemoActive {
+    padding: 30px;
+}
+
+#vehicleDemo {
+    display: none;
+}
+
+#vehicleDemoActive {
+    padding: 30px;
+}
+
 #image-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
@@ -252,4 +314,184 @@ a:hover .normal-button {
     color: #f2f2f2;
     text-align: center;
     padding: 10px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 568px) {
+    ::-webkit-scrollbar {
+        width: 9px;
+    }
+
+    #wrapper {
+        width: 100%;
+        background-color: #24242488;
+        display: block;
+    }
+
+    h1 {
+        color: #f2f2f2;
+        font-size: 2rem;
+        text-align: center;
+        font-family: 'Sedgwick Ave Display', cursive;
+        padding: 20px 0 8px 20px;
+    }
+
+    .language {
+        margin-top: 12px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .language p {
+        font-size: 0.9rem;
+        font-family: 'Montserrat', sans-serif;
+        padding: 5px 0px 5px 5px;
+        display: flex;
+        padding-right: 5px;
+        transition: 0.2s;
+    }
+
+    h3 {
+        color: #f2f2f2;
+        font-size: 0.9rem;
+        font-family: 'Montserrat', sans-serif;
+        padding: 5px 0px 5px 5px;
+    }
+
+    h2 {
+        color: #f2f2f2;
+        font-size: 1.4rem;
+        text-align: left;
+        font-family: 'Sedgwick Ave Display', cursive;
+        padding: 0 0 10px 10px;
+    }
+
+    .alert {
+        padding: 5px;
+        margin: 5px;
+        background-color: #2424246e;
+        border-radius: 25px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+    
+    #time {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .info {
+        padding: 5px;
+        margin: 5px 5px 12px 5px;
+        background-color: #2424246e;
+        border-radius: 25px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+
+    .offers-grid {
+        display: grid;
+        row-gap: 12px;
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+    
+    .offers-item {
+        padding: 5px;
+        background-color: rgba(102, 0, 71, 0.568);
+    }
+    
+    .offers-item .offer-title {
+        color: #f2f2f2;
+        font-size: 1.4rem;
+        font-weight: 900;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .offers-item p {
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .padding-left {
+        padding-left: 15px;
+    }
+    
+    .offers-item {
+        padding: 7px;
+        border-radius: 25px;
+        background-color: rgba(102, 0, 71, 0.568);
+    }
+
+    .buy-grid {
+        display: none;
+    }
+
+    .buy-item-phone {
+        display: block;
+        margin-top: 0.5rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .buy-button {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .buy-button button {
+        color: #f2f2f2;
+        padding: 10px 30px 10px 30px;
+        border-radius: 25px;
+        border: rgba(192, 10, 137, 0.493);
+        background-color: rgba(192, 10, 137, 0.493);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        font-weight: 900;
+        transition: 0.3s;
+    }
+
+    .outfit-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .outfit-item {
+        flex: 33.33%;
+        max-width: 33.33%;
+        padding: 8px;
+    }
+    
+    .outfit-item img {
+        width: 100%;
+        vertical-align: middle;
+        cursor: zoom-in;
+        border-radius: 15px;
+    }
+    
+    .vehicle-grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .vehicle-item {
+        flex: 100%;
+        max-width: 100%;
+        padding: 8px;
+    }
+    
+    .vehicle-item img {
+        width: 100%;
+        vertical-align: middle;
+        cursor: zoom-in;
+        border-radius: 15px;
+    }
+
+    .shown {
+        display: none;
+    }
 }

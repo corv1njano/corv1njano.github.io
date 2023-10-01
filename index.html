@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home | Modded GTAV Accounts</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Sedgwick+Ave+Display&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Sedgwick+Ave+Display&display=swap"
+        rel="stylesheet">
     <script src="scripts.js" type="text/javascript"></script>
     <script src="images.js" type="text/javascript"></script>
 </head>
@@ -28,75 +31,81 @@
             <a href="de/index.html" title="Deutsche Webseite besuchen.">
                 <p>German (Deutsch)</p>
             </a>
-            <p class="dash">|</p>
-            <a href="ru/index.html" title="Посетите русский веб-сайт.">
-                <p>Russian (Русский)</p>
-            </a>
         </div>
         <br>
         <br>
-        <div class="shop">
-            <h2>S H O P</h2>
-            <div class="alert">
-                <p>💥 Autumn Sale: everything <b>-33%</b> cheaper (only while stocks last) - Ends in:</p>
-                <b><p id="time"></p></b>
-                <p>💥</p>
+        <main>
+            <div class="shop">
+                <h2>S H O P</h2>
+                <div class="alert">
+                    <p>💥 Autumn Sale: everything <b>-33%</b> cheaper - only while stocks last! 💥</p>
+                    <p class="inline">Time left: <b><span id="time"></span></b></p>
+                </div>
+                <div class="offers-grid">
+                    <div class="offers-item">
+                        <p class="offer-title">Basic</p>
+                        <div class="price">
+                            <p class="offer-price">Price: <del class="price-old">15€</del></p>
+                            <p class="offer-price price-new">❗10€</p>
+                        </div>
+                        <div class="padding-left">
+                            <p>- 500 Million GTA Dollars</p>
+                            <p>- Level 250</p>
+                            <p>- Maximum Skills</p>
+                            <p>- All Special Unlocks</p>
+                            <p>- 5 Modded Outfits *</p>
+                        </div>
+                        <div class="buy-item-phone">
+                            <a class="buy-button" title="To Checkout... ◥" href="#"><button>BUY BASIC</button></a>
+                        </div>
+                    </div>
+                    <div class="offers-item">
+                        <p class="offer-title">Premium</p>
+                        <div class="price">
+                            <p class="offer-price">Price: <del class="price-old">20€</del></p>
+                            <p class="offer-price price-new">❗13.20€</p>
+                        </div>
+                        <div class="padding-left">
+                            <p>- 1,5 Billion GTA Dollars</p>
+                            <p>- Level 500</p>
+                            <p>- Maximum Skills</p>
+                            <p>- All Special Unlocks</p>
+                            <p>- 10 Modded Outfits *</p>
+                            <p>- 5 Modded Vehicles **</p>
+                        </div>
+                        <div class="buy-item-phone">
+                            <a class="buy-button" title="To Checkout... ◥" href="#"><button>BUY PREMIUM</button></a>
+                        </div>
+                    </div>
+                    <div class="offers-item">
+                        <p class="offer-title">Cash Refill</p>
+                        <div class="price">
+                            <p class="offer-price">Price: <del class="price-old">10€</del></p>
+                            <p class="offer-price price-new">❗6.60€</p>
+                        </div>
+                        <div class="padding-left">
+                            <p>Refill your GTA Dollars (50% discount if an account was purchased through this website, transaction ID needed).
+                            </p>
+                            <p>- Adds 250 Million GTA Dollars</p>
+                        </div>
+                        <div class="buy-item-phone">
+                            <a class="buy-button" title="To Checkout... ◥" href="#"><button>BUY CASH REFILL</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="buy-grid">
+                    <div class="buy-item">
+                        <a class="buy-button" title="To Checkout... ◥" href="#"><button>BUY BASIC</button></a>
+                    </div>
+                    <div class="buy-item">
+                        <a class="buy-button" title="To Checkout... ◥" href="#"><button>BUY PREMIUM</button></a>
+                    </div>
+                    <div class="buy-item">
+                        <a class="buy-button" title="To Checkout... ◥" href="#"><button>BUY CASH REFILL</button></a>
+                    </div>
+                </div>
             </div>
-            <div class="offers-grid">
-                <div class="offers-item">
-                    <p class="offer-title">Basic</p>
-                    <div class="price">
-                        <p class="offer-price">Price: <del class="price-old">15€</del></p>
-                        <p class="offer-price price-new">❗ 10€</p>
-                    </div>
-                    <div class="padding-left">
-                        <p>- 500 Million GTA Dollars</p>
-                        <p>- Level 250</p>
-                        <p>- Maximum Skills</p>
-                        <p>- All Special Unlocks</p>
-                        <p>- 5 Modded Outfits *</p>
-                    </div>
-                </div>
-                <div class="offers-item">
-                    <p class="offer-title">Premium</p>
-                    <div class="price">
-                        <p class="offer-price">Price: <del class="price-old">20€</del></p>
-                        <p class="offer-price price-new">❗ 13.20€</p>
-                    </div>
-                    <div class="padding-left">
-                        <p>- 1,5 Billion GTA Dollars</p>
-                        <p>- Level 500</p>
-                        <p>- Maximum Skills</p>
-                        <p>- All Special Unlocks</p>
-                        <p>- 10 Modded Outfits *</p>
-                        <p>- 5 Modded Vehicles **</p>
-                    </div>
-                </div>
-                <div class="offers-item">
-                    <p class="offer-title">Cash Refill</p>
-                    <div class="price">
-                        <p class="offer-price">Price: <del class="price-old">5€</del></p>
-                        <p class="offer-price price-new">❗ 3.30€</p>
-                    </div>
-                    <div class="padding-left">
-                        <p>Refill your GTA Dollars (only available if an account was purchased through this website).
-                        </p>
-                        <p>- Adds 250 Million GTA Dollars</p>
-                    </div>
-                </div>
-            </div>
-            <div class="buy-grid">
-                <div class="buy-item">
-                    <a class="buy-button" title="To Checkout... ◥" href="#"><button>BUY BASIC</button></a>
-                </div>
-                <div class="buy-item">
-                    <a class="buy-button" title="To Checkout... ◥" href="#"><button>BUY PREMIUM</button></a>
-                </div>
-                <div class="buy-item">
-                    <a class="buy-button" title="To Checkout... ◥" href="#"><button>BUY CASH REFILL</button></a>
-                </div>
-            </div>
-        </div>
+        </main>
         <br>
         <br>
         <br>
@@ -104,28 +113,77 @@
         <div class="selection">
             <h2>M O D D E D &nbsp; O U T F I T S</h2>
             <div class="info">
-                <p><b>* Note: </b>When purchasing, any outfit can be added to the modded account (total amount depends on the product). All you have to do is enter the desired outfit ID at checkout.</p>
+                <p><b>* Note: </b>When purchasing an account, the number of outfits specified with the product may be
+                    freely selected from the outfit selection. All you have to do is enter the desired outfit IDs at
+                    checkout.</p>
             </div>
             <div class="outfit-grid">
-                <div class="outfit-item" onclick="img01()" title="Click to increase Image Size.">
-                    <img src="assets/outfits/01.png" alt="Outfit Preview" id="01">
+                <div class="outfit-item" onclick="outfit01()" title="Click to increase Image Size.">
+                    <img src="assets/outfits/01.png" alt="Outfit Preview">
                 </div>
-                <div class="outfit-item">
+                <div class="outfit-item" onclick="outfit00()" title="Click to increase Image Size.">
                     <img src="assets/outfits/placeholder.png" alt="Outfit Preview">
                 </div>
-                <div class="outfit-item">
+                <div class="outfit-item" onclick="outfit00()" title="Click to increase Image Size.">
                     <img src="assets/outfits/placeholder.png" alt="Outfit Preview">
                 </div>
-                <div class="outfit-item">
+                <div class="outfit-item shown" onclick="outfit00()" title="Click to increase Image Size.">
                     <img src="assets/outfits/placeholder.png" alt="Outfit Preview">
                 </div>
-                <div class="outfit-item">
+                <div class="outfit-item shown" onclick="outfit00()" title="Click to increase Image Size.">
                     <img src="assets/outfits/placeholder.png" alt="Outfit Preview">
                 </div>
             </div>
-            <a class="center" title="More Outfits... ◥"><button class="normal-button" type="button">Show all available Outfits <b>▷</b></button></a>
+            <a class="center" href="#" title="More Outfits... ◥"><button class="normal-button" type="button">Show all
+                    available Outfits <b>▷</b></button></a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>M O D D E D &nbsp; V E H I C L E S</h2>
+            <div class="info">
+                <p><b>** Note: </b>When purchasing an account, the number of vehicles specified with the product (only
+                    for Premium) may be freely selected from the vehicle selection. All you have to do is enter the
+                    desired vehicle IDs at checkout.</p>
+            </div>
+            <div class="vehicle-grid">
+                <div class="vehicle-item" onclick="vehicle01()" title="Click to increase Image Size.">
+                    <img src="assets/vehicles/placeholder.png" alt="Outfit Preview" id="v01">
+                </div>
+                <div class="vehicle-item" onclick="vehicle00()" title="Click to increase Image Size.">
+                    <img src="assets/vehicles/placeholder.png" alt="Outfit Preview" id="v01">
+                </div>
+                <div class="vehicle-item shown" onclick="vehicle00()" title="Click to increase Image Size.">
+                    <img src="assets/vehicles/placeholder.png" alt="Outfit Preview" id="v01">
+                </div>
+            </div>
+            <a class="center" href="#" title="More Outfits... ◥"><button class="normal-button" type="button">Show all
+                    available Vehicles <b>▷</b></button></a>
         </div>
+        <footer class="faq">
+            <h2 class="footer">Website Navigation</h2>
+            <div class="language">
+                <a href="index.html" title="You are here.">
+                    <p class="current-lang">Home (current)</p>
+                </a>
+                <p class="dash">|</p>
+                <a href="#" title="Show all available Outfits.">
+                    <p>Modded Outfits</p>
+                </a>
+                <p class="dash">|</p>
+                <a href="#" title="Show all available Vehicles.">
+                    <p>Modded Vehicles</p>
+                </a>
+                <p class="dash">|</p>
+                <a href="#" title="Got a question? Find the Answer here!">
+                    <p>FAQ</p>
+                </a>
+            </div>
+            <br>
+        </footer>
     </div>
+    <div id="outfitDemo"></div>
+    <div id="vehicleDemo"></div>
 </body>
 
 </html>
