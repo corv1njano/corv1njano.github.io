@@ -235,7 +235,7 @@ body {
 }
 
 footer {
-    margin-top: 70px;
+    margin-top: 100px;
     width: 100%;
     background-color: rgba(102, 0, 71, 0.568);
 }
@@ -303,7 +303,7 @@ a {
     font-size: 1rem;
     font-weight: 900;
     transition: 0.3s;
-    margin: 15px;
+    margin: 15px 15px 0 15px;
 }
 
 a:hover .normal-button {
