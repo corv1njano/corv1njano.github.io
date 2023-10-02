@@ -234,8 +234,8 @@ body {
     border-radius: 15px;
 }
 
-.faq {
-    margin-top: 100px;
+footer {
+    margin-top: 70px;
     width: 100%;
     background-color: rgba(102, 0, 71, 0.568);
 }
@@ -252,7 +252,7 @@ h1 {
     text-align: center;
     font-family: 'Sedgwick Ave Display', cursive;
     padding: 30px 0 10px 10px;
-    text-shadow: 2px 2px 20px #C00A89, 2px 2px 20px rgba(223,12,159,0.69), 2px 2px 20px rgba(251,14,179,0.69), 2px 2px 20px rgba(251,14,179,0.69);
+    text-shadow: 2px 2px 20px #C00A89, 2px 2px 20px rgba(223, 12, 159, 0.69), 2px 2px 20px rgba(251, 14, 179, 0.69), 2px 2px 20px rgba(251, 14, 179, 0.69);
 }
 
 h2 {
@@ -270,6 +270,22 @@ h2 {
     font-weight: 900;
     font-family: 'Montserrat', sans-serif;
     padding: 10px 0 10px 10px;
+}
+
+.question {
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 10px 10px 10px;
+    text-shadow: 2px 2px 20px #C00A89, 2px 2px 20px rgba(223, 12, 159, 0.69), 2px 2px 20px rgba(251, 14, 179, 0.69), 2px 2px 20px rgba(251, 14, 179, 0.69);
+}
+
+.answer {
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 10px 10px 10px;
 }
 
 a {
@@ -331,6 +347,14 @@ a:hover .normal-button {
     padding: 10px;
 }
 
+.faq a {
+    text-decoration: underline;
+}
+.faq a:hover {
+    color: rgb(192, 10, 138);
+    cursor: pointer;
+}
+
 @media screen and (max-width: 500px) {
     ::-webkit-scrollbar {
         width: 9px;
@@ -348,7 +372,7 @@ a:hover .normal-button {
         text-align: center;
         font-family: 'Sedgwick Ave Display', cursive;
         padding: 20px 0 8px 0;
-        text-shadow: 2px 2px 20px #C00A89, 2px 2px 20px rgba(223,12,159,0.69), 2px 2px 20px rgba(251,14,179,0.69), 2px 2px 20px rgba(251,14,179,0.69);
+        text-shadow: 2px 2px 20px #C00A89, 2px 2px 20px rgba(223, 12, 159, 0.69), 2px 2px 20px rgba(251, 14, 179, 0.69), 2px 2px 20px rgba(251, 14, 179, 0.69);
     }
 
     .language {
@@ -382,6 +406,22 @@ a:hover .normal-button {
         margin: 0;
         display: flex;
         justify-content: center;
+    }
+
+    .answer {
+        color: #f2f2f2;
+        font-size: 0.9rem;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0 10px 10px 10px;
+    }
+
+    .question {
+        color: #f2f2f2;
+        font-size: 0.9rem;
+        font-weight: 900;
+        font-family: 'Montserrat', sans-serif;
+        padding: 7px 10px 10px 10px;
+        text-shadow: 2px 2px 20px #C00A89, 2px 2px 20px rgba(223, 12, 159, 0.69), 2px 2px 20px rgba(251, 14, 179, 0.69), 2px 2px 20px rgba(251, 14, 179, 0.69);
     }
 
     h2 {
@@ -517,7 +557,7 @@ a:hover .normal-button {
     .shown {
         display: none;
     }
-    
+
     .footer {
         padding: 20px 0px 0px 0px;
         text-align: center;
@@ -533,15 +573,15 @@ a:hover .normal-button {
         box-shadow: 0 0 25px rgba(192, 10, 137, 0.493);
         border-radius: 15px;
     }
-    
+
     #outfitDemoActive {
         padding: 15px;
     }
-    
+
     #vehicleDemoActive {
         padding: 15px;
     }
-    
+
     #image-text {
         font-family: 'Montserrat', sans-serif;
         font-size: 1rem;
@@ -549,5 +589,18 @@ a:hover .normal-button {
         color: #f2f2f2;
         text-align: center;
         padding: 8px;
+    }
+
+    .normal-button {
+        color: #f2f2f2;
+        padding: 7px 12px 7px 12px;
+        border-radius: 25px;
+        border: rgba(192, 10, 137, 0.493);
+        background-color: #c00a897e;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 900;
+        transition: 0.3s;
+        margin: 15px;
     }
 }
