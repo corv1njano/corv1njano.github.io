@@ -2,7 +2,7 @@
 
 (function () {
     var start = new Date;
-    start.setHours(48, 0, 0); //Zeitraum setzen
+    start.setHours(96, 0, 0);
 
     function pad(num) {
         return ("0" + parseInt(num)).substr(-2);
@@ -22,5 +22,9 @@
         setTimeout(tick, 1000);
     }
 
+    const hour = document.getElementById("time");
     document.addEventListener('DOMContentLoaded', tick);
+    if (hh != 0 && mm != 0 && ss != 0) {
+       
+    }
 })();
