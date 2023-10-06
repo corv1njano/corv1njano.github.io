@@ -2,7 +2,7 @@ function outfit01() {
     const page = document.getElementById("wrapper");
     page.style.display = "none";
     var img = document.createElement("img");
-    img.setAttribute("src", "assets/outfits/01.png");
+    img.setAttribute("src", "../assets/outfits/01.png");
     img.setAttribute("id", "image-view-outfit");
     var txt = document.createElement("p");
     var txtNode = document.createTextNode("Klicke irgendwo, um das Bild zu schließen.");
@@ -21,7 +21,7 @@ function outfit02() {
     const page = document.getElementById("wrapper");
     page.style.display = "none";
     var img = document.createElement("img");
-    img.setAttribute("src", "assets/outfits/02.png");
+    img.setAttribute("src", "../assets/outfits/02.png");
     img.setAttribute("id", "image-view-outfit");
     var txt = document.createElement("p");
     var txtNode = document.createTextNode("Klicke irgendwo, um das Bild zu schließen.");
@@ -40,7 +40,7 @@ function outfit03() {
     const page = document.getElementById("wrapper");
     page.style.display = "none";
     var img = document.createElement("img");
-    img.setAttribute("src", "assets/outfits/03.png");
+    img.setAttribute("src", "../assets/outfits/03.png");
     img.setAttribute("id", "image-view-outfit");
     var txt = document.createElement("p");
     var txtNode = document.createTextNode("Klicke irgendwo, um das Bild zu schließen.");
@@ -59,7 +59,7 @@ function outfit04() {
     const page = document.getElementById("wrapper");
     page.style.display = "none";
     var img = document.createElement("img");
-    img.setAttribute("src", "assets/outfits/04.png");
+    img.setAttribute("src", "../assets/outfits/04.png");
     img.setAttribute("id", "image-view-outfit");
     var txt = document.createElement("p");
     var txtNode = document.createTextNode("Klicke irgendwo, um das Bild zu schließen.");
@@ -78,7 +78,7 @@ function outfit05() {
     const page = document.getElementById("wrapper");
     page.style.display = "none";
     var img = document.createElement("img");
-    img.setAttribute("src", "assets/outfits/05.png");
+    img.setAttribute("src", "../assets/outfits/05.png");
     img.setAttribute("id", "image-view-outfit");
     var txt = document.createElement("p");
     var txtNode = document.createTextNode("Klicke irgendwo, um das Bild zu schließen.");
