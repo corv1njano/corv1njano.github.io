@@ -125,8 +125,8 @@ a {
     font-family: 'Montserrat', sans-serif;
 }
 
-.padding-left {
-    padding-left: 20px;
+.padding {
+    padding: 8px;
 }
 
 .offers-item {
@@ -324,46 +324,12 @@ a:hover .normal-button {
     cursor: pointer;
 }
 
-#image-view-outfit {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 380px;
-    height: auto;
-    box-shadow: 0 0 25px rgba(192, 10, 137, 0.493);
-    border-radius: 15px;
-}
-
-#outfitDemo {
-    display: none;
-}
-
-#outfitDemoActive {
-    padding: 30px;
-}
-
-#vehicleDemo {
-    display: none;
-}
-
-#vehicleDemoActive {
-    padding: 30px;
-}
-
-#image-text {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 10px;
-}
-
 .faq a {
     color: #f2f2f2;
     text-decoration: underline;
     transition: 0.1s;
 }
+
 .faq a:hover {
     color: rgb(192, 10, 138);
     cursor: pointer;
@@ -497,8 +463,8 @@ a:hover .normal-button {
         font-family: 'Montserrat', sans-serif;
     }
 
-    .padding-left {
-        padding-left: 15px;
+    .padding {
+        padding: 6px;
     }
 
     .offers-item {
@@ -520,7 +486,7 @@ a:hover .normal-button {
     .buy-button {
         display: flex;
         justify-content: center;
-        
+
     }
 
     .buy-button button {
@@ -581,32 +547,7 @@ a:hover .normal-button {
         letter-spacing: 0.15rem;
     }
 
-    #image-view-outfit {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 270px;
-        height: auto;
-        box-shadow: 0 0 25px rgba(192, 10, 137, 0.493);
-        border-radius: 15px;
-    }
 
-    #outfitDemoActive {
-        padding: 15px;
-    }
-
-    #vehicleDemoActive {
-        padding: 15px;
-    }
-
-    #image-text {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1rem;
-        font-weight: 900;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 8px;
-    }
 
     .normal-button {
         color: #f2f2f2;

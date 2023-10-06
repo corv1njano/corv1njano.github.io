@@ -1,0 +1,83 @@
+#image-view-outfit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 380px;
+    height: auto;
+    box-shadow: 0 0 25px rgba(192, 10, 137, 0.493);
+    border-radius: 15px;
+}
+
+#outfitDemo {
+    display: none;
+}
+
+#outfitDemoActive {
+    padding: 30px;
+}
+
+#image-view-vehicle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+    box-shadow: 0 0 25px rgba(192, 10, 137, 0.493);
+    border-radius: 15px;
+}
+
+#vehicleDemo {
+    display: none;
+}
+
+#vehicleDemoActive {
+    padding: 30px;
+}
+
+#image-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    #image-view-outfit {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 270px;
+        height: auto;
+        box-shadow: 0 0 25px rgba(192, 10, 137, 0.493);
+        border-radius: 15px;
+    }
+
+    #outfitDemoActive {
+        padding: 15px;
+    }
+
+    #image-view-vehicle {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 25px rgba(192, 10, 137, 0.493);
+        border-radius: 15px;
+    }
+
+    #vehicleDemoActive {
+        padding: 15px;
+    }
+
+    #image-text {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        font-weight: 900;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 8px;
+    }
+}
