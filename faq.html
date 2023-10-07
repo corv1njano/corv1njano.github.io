@@ -16,8 +16,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Sedgwick+Ave+Display&display=swap"
         rel="stylesheet">
-    <script src="scripts.js" type="text/javascript"></script>
-    <script src="images.js" type="text/javascript"></script>
 </head>
 
 <body id="body">
@@ -35,27 +33,76 @@
             <div class="faq">
                 <h2>P U R C H A S E &nbsp; P R O C E S S
                 </h2>
-                <p class="question">How to buy a modded account?</p>
-                <p class="answer">Visit the <a href="index.html">main page</a> and choose on of the available shop offers. Then click on the button below your chosen offer to get redirect to the checkout form. After your payment has been received, a member of our team will take care of your account and send you the details.</p>
-                <p class="question">What payment methods are there?</p>
-                <p class="answer">Our service only accepts gift voucher cards from various online services. The voucher cards must of course correspond to the value of the product. Our service only accepts German (regional) voucher cards. We accept the following:<br>- Amazon Gift Card<br>- PaySafe Card<br>- PlayStation/PSN Card<br>- Xbox Gift Card</p>
+                <div class="padding">
+                    <button class="collapse-question top-q">How to buy a modded account?</button>
+                    <div class="content">
+                        <p>Visit the <a href="index.html">main page</a> and choose on of the available shop offers. Then
+                            click on the button below your chosen offer to get redirect to the checkout form. After your
+                            payment has been received, a member of our team will take care of your account and send you
+                            the details.</p>
+                    </div>
+                    <button class="collapse-question">What payment methods are there?</button>
+                    <div class="content">
+                        <p>Our service only accepts gift voucher cards from various online services. The voucher cards
+                            must of course correspond to the value of the product. Our service only accepts German
+                            (regional) voucher cards. We accept the following:<br>- Amazon Gift Card<br>- PaySafe
+                            Card<br>- PlayStation/PSN Card<br>- Xbox Gift Card</p>
+                    </div>
+                    <button class="collapse-question bottom-q">How to fill out the form?</button>
+                    <div class="content bottom-c">
+                        <p>Based on your purchase option and your selected language, you will be redirected to another
+                            page where you will have to fill out a form to complete the purchase request. The fields to
+                            be filled out are appropriately titled and self-explanatory.<br>If you still have any
+                            questions, please contact us using the email address below.</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <h2>A B O U T &nbsp; T H E &nbsp; A C C O U N T
+                </h2>
+                <script>
+                    var coll = document.getElementsByClassName("collapse-question");
+                    var i;
+                    for (i = 0; i < coll.length; i++) {
+                        coll[i].addEventListener("click", function () {
+                            this.classList.toggle("active");
+                            var content = this.nextElementSibling;
+                            if (content.style.maxHeight) {
+                                content.style.maxHeight = null;
+                            } else {
+                                content.style.maxHeight = content.scrollHeight + "px";
+                            }
+                        });
+                    }
+
+                    var bottomNormal = document.getElementsByClassName("bottom-q");
+                    for (i = 0; i < bottomNormal.length; i++) {
+                        bottomNormal[i].addEventListener("click", function () {
+                            this.classList.toggle("bottom-q");
+                            this.nextElementSibling.classList.toggle("active-bottom-content");
+                        });
+                    }
+                </script>
             </div>
-        </main>
-        <footer>
-            <h2 class="footer">Website Navigation</h2>
-            <div class="language">
-                <a href="index.html" title="Return to the Start Page.">Home</a>
-                <p class="dash">|</p>
-                <a href="#" title="Show all available Outfits.">Modded Outfits</a>
-                <p class="dash">|</p>
-                <a href="#" title="Show all available Vehicles.">Modded Vehicles</a>
-                <p class="dash">|</p>
-                <a class="current-lang" href="faq.html" title="You are here.">FAQ</a>
-            </div>
-            <br>
-            <p class="footer-note">Copyright © <script>document.write(new Date().getFullYear())</script> corv1njano - All rights reserved</p>
-            <br>
-        </footer>
+            <footer>
+                <h2 class="footer">Website Navigation</h2>
+                <div class="language">
+                    <a href="index.html" title="Return to the Start Page.">Home</a>
+                    <p class="dash">|</p>
+                    <a href="#" title="Show all available Outfits.">Modded Outfits</a>
+                    <p class="dash">|</p>
+                    <a href="#" title="Show all available Vehicles.">Modded Vehicles</a>
+                    <p class="dash">|</p>
+                    <a class="current-lang" href="faq.html" title="You are here.">FAQ</a>
+                </div>
+                <br>
+                <p class="footer-note">Copyright ©
+                    <script>document.write(new Date().getFullYear())</script> corv1njano - All rights reserved
+                </p>
+                <br>
+            </footer>
+        </div>
+    </main>
     </div>
 </body>
 
