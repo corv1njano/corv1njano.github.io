@@ -1,0 +1,88 @@
+.faq a {
+    color: #f2f2f2;
+    text-decoration: underline;
+    transition: 0.1s;
+}
+
+.faq a:hover {
+    color: rgb(192, 10, 138);
+    cursor: pointer;
+}
+
+.question {
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 10px 10px 10px;
+    text-shadow: 2px 2px 20px #C00A89, 2px 2px 20px rgba(223, 12, 159, 0.69), 2px 2px 20px rgba(251, 14, 179, 0.69), 2px 2px 20px rgba(251, 14, 179, 0.69);
+}
+
+.answer {
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 10px 10px 10px;
+}
+
+.collapse-question::before {
+    content: "▷";
+    padding-right: 10px;
+}
+
+.collapse-question {
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    background-color: #24242488;
+    cursor: pointer;
+    text-shadow: 2px 2px 20px #C00A89, 2px 2px 20px rgba(223, 12, 159, 0.69), 2px 2px 20px rgba(251, 14, 179, 0.69), 2px 2px 20px rgba(251, 14, 179, 0.69);
+}
+
+.collapse-content {
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 15px;
+    padding-left: 25px;
+    /* collapseable */
+    display: none;
+    overflow: hidden;
+    background-color: #24242488;
+    width: 100%;
+    text-align: left;
+    border-bottom: 3px solid #8b8b8b88;
+}
+
+.top-q {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.bottom-q {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+@media screen and (max-width: 500px) {
+    .question {
+        color: #f2f2f2;
+        font-size: 0.9rem;
+        font-weight: 900;
+        font-family: 'Montserrat', sans-serif;
+        padding: 7px 10px 10px 10px;
+        text-shadow: 2px 2px 20px #C00A89, 2px 2px 20px rgba(223, 12, 159, 0.69), 2px 2px 20px rgba(251, 14, 179, 0.69), 2px 2px 20px rgba(251, 14, 179, 0.69);
+    }
+
+    .answer {
+        color: #f2f2f2;
+        font-size: 0.9rem;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0 10px 10px 10px;
+    }
+}

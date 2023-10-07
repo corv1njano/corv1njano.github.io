@@ -21,10 +21,5 @@
             hh + ":" + mm + ":" + ss;
         setTimeout(tick, 1000);
     }
-
-    const hour = document.getElementById("time");
     document.addEventListener('DOMContentLoaded', tick);
-    if (hh != 0 && mm != 0 && ss != 0) {
-       
-    }
 })();

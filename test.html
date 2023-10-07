@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Modded GTAV Accounts</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="faq.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Sedgwick+Ave+Display&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Sedgwick+Ave+Display&display=swap"
+        rel="stylesheet">
+    <script src="scripts.js" type="text/javascript"></script>
+    <script src="images.js" type="text/javascript"></script>
+</head>
+
+<body id="body">
+    <div id="wrapper">
+        <h1>GTA Online Modded Account FAQ</h1>
+        <div class="language">
+            <p class="lang-title">Choose Language:</p>
+            <a class="current-lang" href="index.html" title="You are here.">English (selected) </a>
+            <p class="dash">|</p>
+            <a href="de/index.html" title="Deutsche Webseite besuchen.">German (Deutsch)</a>
+        </div>
+        <br>
+        <br>
+        <main>
+            <div class="faq">
+                <script>
+                    var coll = document.getElementsByClassName("collapse-question");
+                    var i;
+                    
+                    for (i = 0; i < coll.length; i++) {
+                        coll[i].addEventListener("click", function () {
+                            this.classList.toggle("active");
+                            var content = this.nextElementSibling;
+                            console.log("asasasas")
+                            if (content.style.display === "block") {
+                                content.style.display = "none";
+                                
+                            } else {
+                                content.style.display = "block";
+                            }
+                        });
+                    }
+                </script>
+                <h2>P U R C H A S E &nbsp; P R O C E S S
+                </h2>
+                <div class="padding">
+                    <button class="collapse-question top-q">How to buy a modded account?</button>
+                    <div class="collapse-content">
+                        <p>Visit the <a href="index.html">main page</a> and choose on of the available shop offers. Then click on the button below your chosen offer to get redirect to the checkout form. After your payment has been received, a member of our team will take care of your account and send you the details.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+    <footer>
+        <h2 class="footer">Website Navigation</h2>
+        <div class="language">
+            <a href="index.html" title="Return to the Start Page.">Home</a>
+            <p class="dash">|</p>
+            <a href="#" title="Show all available Outfits.">Modded Outfits</a>
+            <p class="dash">|</p>
+            <a href="#" title="Show all available Vehicles.">Modded Vehicles</a>
+            <p class="dash">|</p>
+            <a class="current-lang" href="faq.html" title="You are here.">FAQ</a>
+        </div>
+        <br>
+        <p class="footer-note">Copyright ©
+            <script>document.write(new Date().getFullYear())</script> corv1njano - All rights reserved
+        </p>
+        <br>
+    </footer>
+    </div>
+</body>
+
+</html>

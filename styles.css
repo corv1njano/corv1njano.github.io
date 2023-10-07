@@ -289,22 +289,6 @@ h2 {
     padding: 10px 0 10px 10px;
 }
 
-.question {
-    color: #f2f2f2;
-    font-size: 1.2rem;
-    font-weight: 900;
-    font-family: 'Montserrat', sans-serif;
-    padding: 15px 10px 10px 10px;
-    text-shadow: 2px 2px 20px #C00A89, 2px 2px 20px rgba(223, 12, 159, 0.69), 2px 2px 20px rgba(251, 14, 179, 0.69), 2px 2px 20px rgba(251, 14, 179, 0.69);
-}
-
-.answer {
-    color: #f2f2f2;
-    font-size: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
-    padding: 0 10px 10px 10px;
-}
-
 .normal-button {
     color: #f2f2f2;
     padding: 10px 45px 10px 45px;
@@ -321,17 +305,6 @@ h2 {
 a:hover .normal-button {
     border: rgba(255, 60, 197, 0.493);
     background-color: rgba(255, 60, 197, 0.493);
-    cursor: pointer;
-}
-
-.faq a {
-    color: #f2f2f2;
-    text-decoration: underline;
-    transition: 0.1s;
-}
-
-.faq a:hover {
-    color: rgb(192, 10, 138);
     cursor: pointer;
 }
 
@@ -388,22 +361,6 @@ a:hover .normal-button {
         margin: 0;
         display: flex;
         justify-content: center;
-    }
-
-    .answer {
-        color: #f2f2f2;
-        font-size: 0.9rem;
-        font-family: 'Montserrat', sans-serif;
-        padding: 0 10px 10px 10px;
-    }
-
-    .question {
-        color: #f2f2f2;
-        font-size: 0.9rem;
-        font-weight: 900;
-        font-family: 'Montserrat', sans-serif;
-        padding: 7px 10px 10px 10px;
-        text-shadow: 2px 2px 20px #C00A89, 2px 2px 20px rgba(223, 12, 159, 0.69), 2px 2px 20px rgba(251, 14, 179, 0.69), 2px 2px 20px rgba(251, 14, 179, 0.69);
     }
 
     h2 {
