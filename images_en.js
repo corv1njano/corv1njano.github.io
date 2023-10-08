@@ -1,176 +1,57 @@
-function outfit01() {
-    const page = document.getElementById("wrapper");
-    page.style.display = "none";
-    var img = document.createElement("img");
-    img.setAttribute("src", "assets/outfits/01.png");
-    img.setAttribute("id", "image-view-outfit");
-    var txt = document.createElement("p");
-    var txtNode = document.createTextNode("Click anywhere to close the image.");
-    txt.setAttribute("id", "image-text");
-    const div = document.getElementById("outfitDemo");
-    div.setAttribute("id", "outfitDemoActive")
-    div.appendChild(img);
-    txt.appendChild(txtNode);
-    const body = document.getElementById("body");
-    body.appendChild(txt);
-    setTimeout(function(){
-        body.setAttribute("onclick", "closeOutfit()")
-    },500)
+var images = document.getElementsByClassName("outfit-item");
+var i;
+for (let i = 0; i < images.length; i++) {
+    images[i].addEventListener("click", function () {
+        var outfitId = this.firstElementChild.getAttribute("src");
+        document.getElementById("wrapper").style.display = "none";
+        var img = document.createElement("img");
+        var div = document.createElement("div");
+        var txt = document.createElement("p");
+        img.setAttribute("src", outfitId);
+        img.classList.add("outfit-image-active");
+        div.classList.add("outfit-div-active");
+        txt.innerHTML = "Click anywhere to close the image.";
+        txt.classList.add("image-text");
+        const body = document.getElementById("body");
+        body.appendChild(div).appendChild(img);
+        body.appendChild(txt);
+        setTimeout(function () {
+            body.setAttribute("onclick", "closeOutfit()")
+        }, 500);
+    });
 }
-function outfit02() {
-    const page = document.getElementById("wrapper");
-    page.style.display = "none";
-    var img = document.createElement("img");
-    img.setAttribute("src", "assets/outfits/02.png");
-    img.setAttribute("id", "image-view-outfit");
-    var txt = document.createElement("p");
-    var txtNode = document.createTextNode("Click anywhere to close the image.");
-    txt.setAttribute("id", "image-text");
-    const div = document.getElementById("outfitDemo");
-    div.setAttribute("id", "outfitDemoActive")
-    div.appendChild(img);
-    txt.appendChild(txtNode);
-    const body = document.getElementById("body");
-    body.appendChild(txt);
-    setTimeout(function(){
-        body.setAttribute("onclick", "closeOutfit()")
-    },500)
-}
-function outfit03() {
-    const page = document.getElementById("wrapper");
-    page.style.display = "none";
-    var img = document.createElement("img");
-    img.setAttribute("src", "assets/outfits/03.png");
-    img.setAttribute("id", "image-view-outfit");
-    var txt = document.createElement("p");
-    var txtNode = document.createTextNode("Click anywhere to close the image.");
-    txt.setAttribute("id", "image-text");
-    const div = document.getElementById("outfitDemo");
-    div.setAttribute("id", "outfitDemoActive")
-    div.appendChild(img);
-    txt.appendChild(txtNode);
-    const body = document.getElementById("body");
-    body.appendChild(txt);
-    setTimeout(function(){
-        body.setAttribute("onclick", "closeOutfit()")
-    },500)
-}
-function outfit04() {
-    const page = document.getElementById("wrapper");
-    page.style.display = "none";
-    var img = document.createElement("img");
-    img.setAttribute("src", "assets/outfits/04.png");
-    img.setAttribute("id", "image-view-outfit");
-    var txt = document.createElement("p");
-    var txtNode = document.createTextNode("Click anywhere to close the image.");
-    txt.setAttribute("id", "image-text");
-    const div = document.getElementById("outfitDemo");
-    div.setAttribute("id", "outfitDemoActive")
-    div.appendChild(img);
-    txt.appendChild(txtNode);
-    const body = document.getElementById("body");
-    body.appendChild(txt);
-    setTimeout(function(){
-        body.setAttribute("onclick", "closeOutfit()")
-    },500)
-}
-function outfit05() {
-    const page = document.getElementById("wrapper");
-    page.style.display = "none";
-    var img = document.createElement("img");
-    img.setAttribute("src", "assets/outfits/05.png");
-    img.setAttribute("id", "image-view-outfit");
-    var txt = document.createElement("p");
-    var txtNode = document.createTextNode("Click anywhere to close the image.");
-    txt.setAttribute("id", "image-text");
-    const div = document.getElementById("outfitDemo");
-    div.setAttribute("id", "outfitDemoActive")
-    div.appendChild(img);
-    txt.appendChild(txtNode);
-    const body = document.getElementById("body");
-    body.appendChild(txt);
-    setTimeout(function(){
-        body.setAttribute("onclick", "closeOutfit()")
-    },500)
-}
-
 function closeOutfit() {
-    const page = document.getElementById("wrapper");
-    page.style.display = "block";
-    document.getElementById("image-view-outfit").remove();
-    document.getElementById("image-text").remove();
-    const body = document.getElementById("body");
-    body.removeAttribute("onclick");
-    document.getElementById("outfitDemoActive").setAttribute("id", "outfitDemo");
+    document.getElementsByClassName("outfit-div-active")[0].remove();
+    document.getElementsByClassName("image-text")[0].remove();
+    document.getElementById("wrapper").style.display = "block";
+    document.getElementById("body").removeAttribute("onclick");
 }
 
-
-//----------------------- Vehicles -----------------------
-
-function vehicle01() {
-    const page = document.getElementById("wrapper");
-    page.style.display = "none";
-    var img = document.createElement("img");
-    img.setAttribute("src", "../assets/vehicles/01.png");
-    img.setAttribute("id", "image-view-vehicle");
-    var txt = document.createElement("p");
-    var txtNode = document.createTextNode("Click anywhere to close the image.");
-    txt.setAttribute("id", "image-text");
-    const div = document.getElementById("vehicleDemo");
-    div.setAttribute("id", "vehicleDemoActive")
-    div.appendChild(img);
-    txt.appendChild(txtNode);
-    const body = document.getElementById("body");
-    body.appendChild(txt);
-    setTimeout(function(){
-        body.setAttribute("onclick", "closeVehicle()")
-    },500)
+var images = document.getElementsByClassName("vehicle-item");
+var i;
+for (let i = 0; i < images.length; i++) {
+    images[i].addEventListener("click", function () {
+        var outfitId = this.firstElementChild.getAttribute("src");
+        document.getElementById("wrapper").style.display = "none";
+        var img = document.createElement("img");
+        var div = document.createElement("div");
+        var txt = document.createElement("p");
+        img.setAttribute("src", outfitId);
+        img.classList.add("vehicle-image-active");
+        div.classList.add("vehicle-div-active");
+        txt.innerHTML = "Click anywhere to close the image.";
+        txt.classList.add("image-text");
+        const body = document.getElementById("body");
+        body.appendChild(div).appendChild(img);
+        body.appendChild(txt);
+        setTimeout(function () {
+            body.setAttribute("onclick", "closeVehicle()")
+        }, 500);
+    });
 }
-function vehicle02() {
-    const page = document.getElementById("wrapper");
-    page.style.display = "none";
-    var img = document.createElement("img");
-    img.setAttribute("src", "../assets/vehicles/02.png");
-    img.setAttribute("id", "image-view-vehicle");
-    var txt = document.createElement("p");
-    var txtNode = document.createTextNode("Click anywhere to close the image.");
-    txt.setAttribute("id", "image-text");
-    const div = document.getElementById("vehicleDemo");
-    div.setAttribute("id", "vehicleDemoActive")
-    div.appendChild(img);
-    txt.appendChild(txtNode);
-    const body = document.getElementById("body");
-    body.appendChild(txt);
-    setTimeout(function(){
-        body.setAttribute("onclick", "closeVehicle()")
-    },500)
-}
-function vehicle03() {
-    const page = document.getElementById("wrapper");
-    page.style.display = "none";
-    var img = document.createElement("img");
-    img.setAttribute("src", "../assets/vehicles/03.png");
-    img.setAttribute("id", "image-view-vehicle");
-    var txt = document.createElement("p");
-    var txtNode = document.createTextNode("Click anywhere to close the image.");
-    txt.setAttribute("id", "image-text");
-    const div = document.getElementById("vehicleDemo");
-    div.setAttribute("id", "vehicleDemoActive")
-    div.appendChild(img);
-    txt.appendChild(txtNode);
-    const body = document.getElementById("body");
-    body.appendChild(txt);
-    setTimeout(function(){
-        body.setAttribute("onclick", "closeVehicle()")
-    },500)
-}
-
 function closeVehicle() {
-    const page = document.getElementById("wrapper");
-    page.style.display = "block";
-    document.getElementById("image-view-vehicle").remove();
-    document.getElementById("image-text").remove();
-    const body = document.getElementById("body");
-    body.removeAttribute("onclick");
-    document.getElementById("vehicleDemoActive").setAttribute("id", "vehicleDemo");
+    document.getElementsByClassName("vehicle-div-active")[0].remove();
+    document.getElementsByClassName("image-text")[0].remove();
+    document.getElementById("wrapper").style.display = "block";
+    document.getElementById("body").removeAttribute("onclick");
 }

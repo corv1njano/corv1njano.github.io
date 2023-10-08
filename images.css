@@ -1,40 +1,34 @@
-#image-view-outfit {
+.outfit-div-active {
+    padding: 30px;
+    text-align:center;
+}
+
+.outfit-image-active {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 380px;
     height: auto;
     box-shadow: 0 0 25px rgba(192, 10, 137, 0.493);
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
-#outfitDemo {
-    display: none;
-}
-
-#outfitDemoActive {
+.vehicle-div-active {
     padding: 30px;
+    text-align:center;
 }
 
-#image-view-vehicle {
+.vehicle-image-active {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
     height: auto;
     box-shadow: 0 0 25px rgba(192, 10, 137, 0.493);
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
-#vehicleDemo {
-    display: none;
-}
-
-#vehicleDemoActive {
-    padding: 30px;
-}
-
-#image-text {
+.image-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: 900;
@@ -44,40 +38,26 @@
 }
 
 @media screen and (max-width: 500px) {
-    #image-view-outfit {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    .outfit-div-active {
+        padding: 15px;
+    }
+    
+    .outfit-image-active {
         width: 270px;
         height: auto;
-        box-shadow: 0 0 25px rgba(192, 10, 137, 0.493);
-        border-radius: 15px;
     }
 
-    #outfitDemoActive {
+    .vehicle-div-active {
         padding: 15px;
     }
-
-    #image-view-vehicle {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
+    
+    .vehicle-image-active {
+        width: 95%;
         height: auto;
-        box-shadow: 0 0 25px rgba(192, 10, 137, 0.493);
-        border-radius: 15px;
     }
-
-    #vehicleDemoActive {
-        padding: 15px;
-    }
-
-    #image-text {
-        font-family: 'Montserrat', sans-serif;
+    
+    .image-text {
         font-size: 1rem;
-        font-weight: 900;
-        color: #f2f2f2;
-        text-align: center;
         padding: 8px;
     }
 }
