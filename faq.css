@@ -74,6 +74,43 @@
     border-bottom-right-radius: 25px;
 }
 
+.email {
+    display: flex;
+    align-items: center;
+}
+
+.email-text {
+    color: #f2f2f2;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+}
+
+.email-button {
+    color: #f2f2f2;
+    padding: 10px 45px 10px 45px;
+    border-radius: 25px;
+    border: rgba(192, 10, 137, 0.493);
+    background-color: rgba(192, 10, 137, 0.493);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+.email-button:hover {
+    border: rgba(255, 60, 197, 0.493);
+    background-color: rgba(255, 60, 197, 0.493);
+    cursor: pointer;
+}
+
+.email p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    align-items: center;
+    padding-left: 40px;
+}
+
 @media screen and (max-width: 500px) {
     .collapse-question::before {
         padding-right: 8px;
@@ -96,5 +133,20 @@
 
     .content p {
         padding: 0 11px 11px 1.9rem
+    }
+
+    .email-text {
+        font-size: 0.9rem;
+        padding: 11px;
+    }
+    
+    .email-button {
+        padding: 8px 25px 8px 25px;
+        font-size: 0.89rem;
+    }
+    
+    .email p {
+        font-size: 0.91rem;
+        padding-left: 20px;
     }
 }

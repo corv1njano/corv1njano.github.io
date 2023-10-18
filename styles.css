@@ -17,6 +17,14 @@ body {
     scroll-behavior: smooth;
 }
 
+.home {
+    cursor: pointer;
+}
+.home:hover h1 {
+    transition: 0.2s;
+    text-shadow: 2px 2px 20px rgb(255, 86, 204), 2px 2px 20px rgba(255, 94, 207, 0.69), 2px 2px 20px rgba(255, 51, 194, 0.69), 2px 2px 20px rgba(87, 31, 70, 0.69);
+}
+
 .footer-note {
     font-size: 0.7rem;
     text-align: center;
@@ -252,7 +260,7 @@ a {
 }
 
 footer {
-    margin-top: 100px;
+    margin-top: 80px;
     width: 100%;
     background-color: rgba(102, 0, 71, 0.568);
 }
