@@ -14,17 +14,17 @@ const navMenuContent = {
         {
             "title": "Grundlagen",
             "links": [
-                {
-                    "name": "<span class=\"tag tag-green\">LEICHT</span><hr>",
-                    "href": "#"
-                },
+                // {
+                //     "name": "<span class=\"tag tag-green\">LEICHT</span><hr>",
+                //     "href": "#"
+                // },
                 {
                     "name": "\"Hallo Welt\"-Programm",
                     "href": "/grundlagen/hallo-welt-programm.html"
                 },
                 {
-                    "name": "C#-Synax",
-                    "href": "/grundlagen/#"
+                    "name": "C#-Synax verstehen",
+                    "href": "/grundlagen/c-sharp-syntax-verstehen.html"
                 },
                 {
                     "name": "Kommentare & Namen",

@@ -30,7 +30,7 @@
             <div class="source-code">
                 <div class="code-top">
                     <div class="code-left">
-                        <span>"Hallo Welt!"-Programm</a>
+                        <p>"Hallo Welt!"-Programm</p>
                     </div>
                     <div class="code-right">
                         <div class="code-function code-clipboard">
@@ -61,7 +61,7 @@
             <div class="source-code">
                 <div class="code-top">
                     <div class="code-left">
-                        <span>Beispiel: Text in einer Zeile</a>
+                        <p>Beispiel: Text in einer Zeile</p>
                     </div>
                     <div class="code-right">
                         <div class="code-function code-clipboard">
@@ -101,7 +101,7 @@
             <div class="source-code">
                 <div class="code-top">
                     <div class="code-left">
-                        <span>Beispiel: Text in mehreren Zeilen</a>
+                        <p>Beispiel: Text in mehreren Zeilen</p>
                     </div>
                     <div class="code-right">
                         <div class="code-function code-clipboard">
@@ -140,20 +140,88 @@
                     <p>&nbsp;</p>
                 </div>
             </div>
-            <div class="info i-red">
+            <div class="info i-purple">
                 <p class="info-head">leere zeile</p>
                 <p>Mit <span class="bg-highlight">Console.WriteLine()</span> gibt man Text auf der Konsole aus und springt gleichzeitig in die nächste Zeile. Bei einer weiteren Konsolenausgabe wird dann in der neuen Zeile weitergeschrieben. Daher erscheint in der Ausgabe oben eine zusätzliche leere Zeile, die durch das dritte <span class="bg-highlight">Console.WriteLine()</span> im Code-Beispiel verursacht wird.</p>
             </div>
             <div class="break"></div>
             <h2 class="page-text-link">Programm schließt sich</h2>
             <p class="paragraph">Damit sich die Anwendung nach der Ausführung nicht sofort schließt, muss ein weiterer Befehl verwendet werden. Mit <span class="bg-highlight">Console.ReadLine()</span> kann der Nutzer dazu aufgefordert werden, etwas in die Konsole zu schreiben. Die Konsole wird erst geschlossen, sobald Enter gedrückt wird, um den eingegebenen Text zu "senden".</p>
-
-            
-            
-            
+            <div class="source-code">
+                <div class="code-top">
+                    <div class="code-left">
+                        <p>Konsole schließt sich nicht</p>
+                    </div>
+                    <div class="code-right">
+                        <div class="code-function code-clipboard">
+                            <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="code-function copy-svg">
+                                <path d="M3.5 7C3.5 5 5.5 3 7.5 3H9.5L9.5 5C6.5 5 5.5 6 5.5 9H3.5M9.5 3 9.5 2C9.5 1 10.5 0 11.5 0H17.5L17.5 2H12.5C12.5 2 11.5 2 11.5 3L11.5 5H9.5M9.5 6C9.5 7 10.5 8 11.5 8L17.5 8 17.5 6 12.5 6C12.5 6 11.5 6 11.5 5L9.5 5M17.5 0 18.5 0C19.5 0 20.5 1 20.5 2L20.5 6C20.5 7 19.5 8 18.5 8L17.5 8 17.5 6C18.5 6 18.5 5 18.5 5L18.5 3C18.5 3 18.5 2 17.5 2M20.5 3 22.5 3C24.5 3 26.5 5 26.5 7L26.5 9H24.5C24.5 6 23.5 5 20.5 5M3.5 9 3.5 24H5.5L5.5 9M24.5 9 24.5 24H26.5L26.5 9M3.5 24 3.5 26C3.5 28 5.5 30 7.5 30H22.5C24.5 30 26.5 28 26.5 26L26.5 24H24.5C24.5 26 23.5 28 20.5 28H9.5C5.5 28 5.5 26 5.5 24M7.5 11C7.5 10 8.5 10 8.5 10H16.5C17.5 10 17.5 11 17.5 11 17.5 11 17.5 12 16.5 12H8.5C7.5 12 7.5 11 7.5 11M7.5 15C7.5 14 8.5 14 8.5 14H20.5C21.5 14 21.5 15 21.5 15 21.5 15 21.5 16 20.5 16H8.5C7.5 16 7.5 15 7.5 15M7.5 19C7.5 18 8.5 18 8.5 18H14.5C15.5 18 15.5 19 15.5 19 15.5 19 15.5 20 14.5 20H8.5C7.5 20 7.5 19 7.5 19"/>
+                            </svg>
+                            <p class="code-copy code-function">Kopieren</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-view">
+                    <div class="code-index"></div>
+                    <div class="code-display"><p><span class="blue">using</span> System;</p>
+                        <p><br></p>
+                        <p><span class="blue">class</span> <span class="cyan">Program</span></p>
+                        <p>{</p>
+                        <p>&ensp;&ensp;<span class="blue">static void</span><span class="yellow"> Main</span>(<span class="blue">string</span>[] <span class="light-blue">args</span>)</p>
+                        <p>&ensp;&ensp;{</p>
+                        <p>&ensp;&ensp;&ensp;&ensp;<span class="cyan">Console</span>.<span class="yellow">WriteLine</span>(<span class="orange">"Hallo Welt!"</span>);</p>
+                        <p><br></p>
+                        <p>&ensp;&ensp;&ensp;&ensp;<span class="green">// dieser Befehl verhindert, dass die Konsole direkt wieder geschlossen wird</span></p>
+                        <p>&ensp;&ensp;&ensp;&ensp;<span class="cyan">Console</span>.<span class="yellow">ReadLine</span>();</p>
+                        <p>&ensp;&ensp;}</p>
+                        <p>}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="break"></div>
+            <h2 class="page-text-link">Leere Zeile ausgeben</h2>
+            <p class="paragraph">Der Befehl <span class="bg-highlight">Console.WriteLine()</span> kann auch ohne Parameter geschrieben werden. Dann erhält man als Output eine leere Zeile.</p>
+            <div class="source-code">
+                <div class="code-top">
+                    <div class="code-left">
+                        <p>Beispiel: Text in mehreren Zeilen</p>
+                    </div>
+                    <div class="code-right">
+                        <div class="code-function code-clipboard">
+                            <svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" class="code-function copy-svg">
+                                <path d="M3.5 7C3.5 5 5.5 3 7.5 3H9.5L9.5 5C6.5 5 5.5 6 5.5 9H3.5M9.5 3 9.5 2C9.5 1 10.5 0 11.5 0H17.5L17.5 2H12.5C12.5 2 11.5 2 11.5 3L11.5 5H9.5M9.5 6C9.5 7 10.5 8 11.5 8L17.5 8 17.5 6 12.5 6C12.5 6 11.5 6 11.5 5L9.5 5M17.5 0 18.5 0C19.5 0 20.5 1 20.5 2L20.5 6C20.5 7 19.5 8 18.5 8L17.5 8 17.5 6C18.5 6 18.5 5 18.5 5L18.5 3C18.5 3 18.5 2 17.5 2M20.5 3 22.5 3C24.5 3 26.5 5 26.5 7L26.5 9H24.5C24.5 6 23.5 5 20.5 5M3.5 9 3.5 24H5.5L5.5 9M24.5 9 24.5 24H26.5L26.5 9M3.5 24 3.5 26C3.5 28 5.5 30 7.5 30H22.5C24.5 30 26.5 28 26.5 26L26.5 24H24.5C24.5 26 23.5 28 20.5 28H9.5C5.5 28 5.5 26 5.5 24M7.5 11C7.5 10 8.5 10 8.5 10H16.5C17.5 10 17.5 11 17.5 11 17.5 11 17.5 12 16.5 12H8.5C7.5 12 7.5 11 7.5 11M7.5 15C7.5 14 8.5 14 8.5 14H20.5C21.5 14 21.5 15 21.5 15 21.5 15 21.5 16 20.5 16H8.5C7.5 16 7.5 15 7.5 15M7.5 19C7.5 18 8.5 18 8.5 18H14.5C15.5 18 15.5 19 15.5 19 15.5 19 15.5 20 14.5 20H8.5C7.5 20 7.5 19 7.5 19"/>
+                            </svg>
+                            <p class="code-copy code-function">Kopieren</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-view">
+                    <div class="code-index"></div>
+                    <div class="code-display"><p><span class="blue">using</span> System;</p>
+                        <p><br></p>
+                        <p><span class="blue">class</span> <span class="cyan">Program</span></p>
+                        <p>{</p>
+                        <p>&ensp;&ensp;<span class="blue">static void</span><span class="yellow"> Main</span>(<span class="blue">string</span>[] <span class="light-blue">args</span>)</p>
+                        <p>&ensp;&ensp;{</p>
+                        <p>&ensp;&ensp;&ensp;&ensp;<span class="cyan">Console</span>.<span class="yellow">WriteLine</span>();</p>
+                        <p>&ensp;&ensp;}</p>
+                        <p>}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="output">
+                <div class="output-header">
+                    <p>Konsolen-Output</p>
+                </div>
+                <div class="output-body">
+                    <p></p>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+            <p class="caption">Die Konsole ist nicht leer. Es wurde lediglich eine leere Zeile ausgegeben.</p>
             <div class="article-control">
                 <!-- <a href="#" class="a-btn"><b>◀ </b>Vorheriger Artikel</a> -->
-                <a href="#" class="a-btn after">Nächster Artikel<b> ▶</b></a>
+                <a href="/grundlagen/c-sharp-syntax-verstehen.html" class="a-btn after">Nächster Artikel<b> ▶</b></a>
             </div>
         </div>
         <div class="right" id="navRight"></div>
@@ -164,7 +232,7 @@
     <script>
         function sca() {
             var ca = document.getElementsByClassName('hide-content');
-            ca[0].childNodes[1].classList.add('current');
+            ca[0].childNodes[0].classList.add('current');
             var cb = document.getElementsByClassName('nav-box')[0]
             cb.classList.add('active');
             const content = cb.lastElementChild;
