@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C# Dokumentation • Start</title>
+    <script src="../script.js" defer></script>
+    <link rel="stylesheet" href="../style_gray.css">
+</head>
+<body>
+    <div class="header">
+        <a href="../index.html" class="nav-left-a">
+            <div class="nav-left">
+                <img src="../assets/logo.png" alt="Icon Image">
+                <p>C# Dokumentation</p>
+            </div>
+        </a>
+        <div class="nav-right">
+            <a href="https://github.com/corv1njano/">GitHub Profil</a>
+            <a href="https://github.com/corv1njano/C-Sharp-Repo">Repository</a>
+            <a id="modalTrigger">Sprache</a>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="left"></div>
+        <div class="middle">
+            <h1 class="page-text-link">Titel</h1>
+            <p class="note">Artikel erstellt: dd.mm.yyyy • Artikel zuletzt überarbeitet: dd.mm.yyyy • x mal überarbeitet</p>
+            <div class="article-control">
+                <a href="#" class="a-btn"><b>◀ </b>Vorheriger Artikel</a>
+                <a href="#" class="a-btn after">Nächster Artikel<b> ▶</b></a>
+            </div>
+        </div>
+        <div class="right" id="navRight"></div>
+    </div>
+    <script src="../pageContent.js" defer></script>
+    <div class="modal" id="modal"></div>
+    <div class="footer"></div>
+    <script>
+        function setCurrentArticle() {
+            var currentArticle = document.getElementsByClassName('hide-content');
+            currentArticle[0].childNodes[0].classList.add('current');
+            var currentNavBox = document.getElementsByClassName('nav-box')[0]
+            currentNavBox.classList.add('active');
+            const content = currentNavBox.lastElementChild;
+            if (content.style.maxHeight){
+            content.style.maxHeight = null;
+            } else {
+            content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        }
+    </script>
+</body>
+</html>
