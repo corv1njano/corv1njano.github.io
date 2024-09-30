@@ -112,7 +112,6 @@ for (let i = 0; i < boxes.length; i++) {
 
 
 
-
 // create side navbar
 const h1tag = document.getElementsByTagName('h1');
 const navRight = document.getElementById('navRight');
