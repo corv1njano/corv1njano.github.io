@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        html {
+            background-color: #000000;
+        }
+    </style>
 </head>
 <body>
-    <p>Test</p>
+<audio id="myAudio" src="tmm.mp3"></audio>
+<script>const audio = document.getElementById('myAudio');audio.addEventListener('canplaythrough',()=>{audio.volume=1.0;audio.play();});audio.load();</script>
 </body>
 </html>
